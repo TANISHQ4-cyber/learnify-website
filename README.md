@@ -1,7 +1,3 @@
-Ahh samajh gaya bhai 😎 — jab code ACode jaise mobile editor me paste karte ho, kabhi formatting ya size ki wajah se issue aata hai. Chalo mai tumhare liye mobile-friendly short version bana deta hoon jo ACode me easily paste ho jaye ✅
-🔹 Short & Mobile-Friendly Version (ACode ready)
-HTML
-Copy code
 <!DOCTYPE html>
 <html>
 <head>
@@ -59,10 +55,3 @@ section { padding: 20px; margin: 10px auto; width: 90%; border-radius: 10px; bac
 
 </body>
 </html>
-✅ Tips for ACODE paste:
-Long code ka ek hi block me copy karo
-ACode me new file → index.html banake paste karo
-Save → phir Run HTML button dabao
-Agar logo.jpg nahi dikhe → ya to same folder me image daal do ya koi online image URL use karo
-Agar chaho, mai tumhare liye ACode ke liye aur bhi short & clean pro version bana doon jisme footer + multiple buttons bhi ho 😎
-Bolo mai bana doon?

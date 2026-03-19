@@ -1,1 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Learnify Webtech</title>
+    <style>
+        body {
+            background-color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
+        h1 {
+            color: red;
+            font-size: 24px;
+            margin: 20px 0;
+        }
+
+        p {
+            color: red;
+            font-size: 14px;
+            margin: 10px 0;
+        }
+
+        img {
+            width: 200px;
+            margin: 10px 0;
+        }
+
+        button {
+            background-color: yellow;
+            color: red;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        button:hover {
+            background-color: red;
+            color: yellow;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            background-color: yellow;
+            padding: 20px;
+            border-radius: 10px;
+            width: 150px;
+        }
+
+        .box:hover {
+            background-color: orange;
+            cursor: pointer;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        @media screen and (max-width: 600px) {
+            img {
+                width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Learnify Webtech</h1>
+    <img src="logo.jpg" alt="Logo">
+
+    <p>Ye LCD LED repairing ki training ki website hai</p>
+    <p>Online aur offline dono tareh ki training available hai</p>
+
+    <section>
+        <h2>Our Services</h2>
+
+        <div class="container">
+            <div class="box">LCD Repairing</div>
+            <div class="box">LED Repairing</div>
+            <div class="box">Training Course</div>
+        </div>
+
+    </section>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <a href="https://wa.me/919300011498?text=Hello%20mai%20training%20lena%20chahta%20hu">
+            <button>WhatsApp</button>
+        </a>
+        <a href="tel:919300011498">
+        <button>call now</button>
+        </a>
+    </section>
+
+</body>
+</html>

@@ -6,7 +6,7 @@
         body {
             background-color: white;
             text-align: center;
-            font-family: Arial, sans-serif;
+            font-family: Arial;
             margin: 0;
             padding: 0;
         }
@@ -25,7 +25,9 @@
 
         img {
             width: 200px;
-            margin: 10px 0;
+            max-width: 80%;
+            margin: 10px auto;
+            display: block;
         }
 
         button {
@@ -55,11 +57,11 @@
             padding: 20px;
             border-radius: 10px;
             width: 150px;
+            cursor: pointer;
         }
 
         .box:hover {
             background-color: orange;
-            cursor: pointer;
         }
 
         section {
@@ -76,7 +78,9 @@
 <body>
 
     <h1>Learnify Webtech</h1>
-    <img src="logo.jpg" alt="Logo">
+
+    <!-- Logo -->
+    <img src="logo.jpg" alt="Learnify Webtech Logo">
 
     <p>Ye LCD LED repairing ki training ki website hai</p>
     <p>Online aur offline dono tareh ki training available hai</p>
@@ -86,7 +90,7 @@
 
         <div class="container">
             <div class="box"
-                onclick="window.open('https://youtu.be/QX0wB1zlksU?si=V7lODMFLk1iDmz1m', '_blank')">
+onclick="window.open('https://youtu.be/QX0wB1zlksU?si=V7lODMFLk1iDmz1m', '_blank')">
 LED TV & LCD TV Repairing
             </div>
         </div>

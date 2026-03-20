@@ -1,1 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Learnify Webtech</title>
 
+    <style>
+        body {
+            background-color: white;
+            text-align: center;
+            font-family: Arial;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: red;
+            font-size: 24px;
+            margin: 20px 0;
+        }
+
+        p {
+            color: red;
+            font-size: 14px;
+            margin: 10px 0;
+        }
+
+        img {
+            width: 200px;
+            max-width: 80%;
+            margin: 10px auto;
+            display: block;
+        }
+
+        /* RGB Button */
+        button {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 15px;
+            margin: 5px;
+            color: white;
+            font-weight: bold;
+
+            background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
+            background-size: 400% 400%;
+            animation: rgbAnimation 5s infinite;
+        }
+
+        @keyframes rgbAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        button:hover {
+            box-shadow: 0 0 20px red, 0 0 40px blue;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            background-color: yellow;
+            padding: 20px;
+            border-radius: 10px;
+            width: 150px;
+            cursor: pointer;
+        }
+
+        .box:hover {
+            background-color: orange;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        input {
+            padding: 10px;
+            width: 80%;
+            max-width: 250px;
+            margin: 5px;
+            border-radius: 5px;
+            border: 1px solid gray;
+        }
+
+        @media screen and (max-width: 600px) {
+            img {
+                width: 150px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Learnify Webtech</h1>
+
+    <!-- Logo -->
+    <img src="logo.jpg" alt="Learnify Webtech Logo">
+
+    <p>Ye LCD LED repairing ki training ki website hai</p>
+    <p>Online aur offline dono tareh ki training available hai</p>
+
+    <p><b>Online Course Fees ₹3000 | Offline Course Fees ₹12000</b></p>
+    <p>₹500 Advance required + remaining after joining</p>
+
+    <!-- Services -->
+    <section>
+        <h2>Our Services</h2>
+
+        <div class="container">
+            <div class="box"
+onclick="window.open('https://youtu.be/otBAodAr4DA?si=4fzP7Nc9XukvICHk', '_blank')">
+                LED TV & LCD TV Repairing
+            </div>
+        </div>
+    </section>
+
+    <!-- Form -->
+    <section>
+        <h2>Register Now</h2>
+
+        <form onsubmit="sendToWhatsApp(); return false;">
+            <input type="text" id="name" placeholder="Your Name" required><br><br>
+            <input type="tel" id="phone" placeholder="Mobile Number" required><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact">
+        <h2>Contact Us</h2>
+
+        <a href="https://wa.me/919300011498?text=Hello%20mai%20training%20lena%20chahta%20hu" target="_blank">
+            <button>WhatsApp</button>
+        </a>
+
+        <a href="tel:919300011498">
+            <button>Call Now</button>
+        </a>
+
+        <a href="https://www.google.com/maps/place/Shivpuri,+Madhya+Pradesh" target="_blank">
+            <button>📍 Location</button>
+        </a>
+
+        <a href="https://youtube.com/@learnifywebtechofficial" target="_blank">
+            <button style="background-color:red; color:white;">
+                ▶ Visit YouTube Channel
+            </button>
+        </a>
+
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        function sendToWhatsApp() {
+            var name = document.getElementById("name").value;
+            var phone = document.getElementById("phone").value;
+
+            var message = "New Student Registration:%0AName: " + name + "%0APhone: " + phone;
+
+            window.open("https://wa.me/919300011498?text=" + message, "_blank");
+        }
+    </script>
+
+</body>
+</html>

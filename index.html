@@ -138,15 +138,25 @@
 
     <!-- QR Payment -->
     <section>
-        <h2>Pay Advance via QR</h2>
-        <p>Scan QR to pay ₹500</p>
+    <h2>Pay Advance</h2>
+    <p>Scan this QR to pay ₹500</p>
+    <img src="upi-qr.png" alt="UPI QR" style="width:200px; max-width:80%; margin:auto; display:block;">
 
-        <img 
-        src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=upi://pay?pa=9300011498@ybl&pn=Neeraj%20Shrivastava&am=500&cu=INR" 
-        alt="UPI QR">
+    <!-- Optional Button -->
+    <button class="rgb-btn" onclick="payUPI()">💰 Scan & Pay ₹500</button>
+    <p id="paymentStatus"></p>
+</section>
 
-        <p><b>UPI ID:</b> 9300011498@ybl</p>
-    </section>
+<script>
+function payUPI() {
+    var upiId = "9300011498@ybl"; // Papa ka UPI ID
+    var name = encodeURIComponent("Learnify Webtech Advance");
+    var amount = 500;
+    var url = "upi://pay?pa=" + upiId + "&pn=" + name + "&am=" + amount + "&cu=INR";
+    window.location.href = url;
+    document.getElementById("paymentStatus").innerText = "Payment process started! Complete payment in your UPI app.";
+}
+</script>
 
     <!-- Contact -->
     <section>
